@@ -23,6 +23,11 @@ const App = () => {
           return <img key={elem.id} className='object-cover text-white w-100 h-60 border-3 border-gray-600' src={elem.download_url} alt={elem.author} /> 
         })}
       </div>
+      <br />
+      <div className='flex flex-wrap justify-center gap-15'>
+        <button className='bg-gray-500 py-0.5 px-4 transition-transform duration-150 active:scale-95 cursor-pointer'>Prev</button>
+        <button className='bg-gray-500 py-0.5 px-4 transition-transform duration-150 active:scale-95 cursor-pointer'>Next</button>
+      </div>
     
       
     </div>
